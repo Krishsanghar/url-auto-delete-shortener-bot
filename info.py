@@ -12,9 +12,9 @@ def is_enabled(value, default):
 
 # Bot information
 SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(environ.get('27180565, ''))
-API_HASH = environ.get('f5e58af893794d014273c52de9e58948', '')
-BOT_TOKEN = environ.get('6753973405:AAHD-fdfsKUu_S52FZScRxPaMgBct62xVUM, "")
+API_ID = int(environ.get('27180565,''))
+API_HASH = environ.get('f5e58af893794d014273c52de9e58948''')
+BOT_TOKEN = environ.get('6753973405:AAHD-fdfsKUu_S52FZScRxPaMgBct62xVUM,"")
 
 #Port
 PORT = environ.get("PORT", "8080")
@@ -25,37 +25,37 @@ USE_CAPTION_FILTER = bool(environ.get('False', False))
 PICS = (environ.get('PICS', 'https://telegra.ph/file/b806ad314d0c415571bde.jpg')).split()
 
 # Admins, Channels & Users
-ADMINS = [int(6618248423) if id_pattern.search 6618248423) else admin for admin in environ.get('ADMINS', '2001653136').split()]
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '0').split()]
-auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '2001653136').split()]
+ADMINS = [int(6618248423) if id_pattern.search 6618248423) else admin for admin in environ.get('2001653136').split()]
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('6618248423, '1').split()]
+auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('2001653136').split()]
 AUTH_USERS = (auth_users +6618248423) if auth_users else []
-auth_channel = environ.get('AUTH_CHANNEL', '')
-auth_grp = environ.get('AUTH_GROUP')
-AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
+auth_channel = environ.get('6618248423','')
+auth_grp = environ.get('6618248423')
+AUTH_CHANNEL = int(6618248423) if auth_channel and id_pattern.search(auth_channel) else None
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 
 # MongoDB information
 DATABASE_URI = environ.get('mongodb+srv://krish72:krish72@cluster0.rj1oic0.mongodb.net/?retryWrites=true&w=majority', "")
 DATABASE_NAME = environ.get('Cluster0', "Cluster0")
-COLLECTION_NAME = environ.get('ravan', 'Telegram_files')
+COLLECTION_NAME = environ.get('python', 'Telegram_files')
 
 # Others
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', ''))
+LOG_CHANNEL = int(environ.get('6618248423, ''))
 SUPPORT_CHAT = environ.get('6618248423', 'search_zone_support')
 P_TTI_SHOW_OFF = is_enabled((environ.get('True', "True")), True)
 IMDB = is_enabled((environ.get('IMDB', "False")), True)
-SINGLE_BUTTON = is_enabled((environ.get('SINGLE_BUTTON', "True")), False)
-CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", "ɴᴀᴍᴇ: <code>{file_name}</code> \n\nᴊᴏɪɴ ɴᴏᴡ: [GreyMatter's Bot](https://t.me/greymatter_bots)</b>")
-BATCH_FILE_CAPTION = environ.get("BATCH_FILE_CAPTION", "ɴᴀᴍᴇ: <code>{file_name}</code> \n\nᴊᴏɪɴ ɴᴏᴡ: [GreyMatter's Bot](https://t.me/greymatter_bots)</b>")
+SINGLE_BUTTON = is_enabled((environ.get('True")), False)
+CUSTOM_FILE_CAPTION = environ.get( <code>{file_name}</code> \n\nᴊᴏɪɴ ɴᴏᴡ: [GreyMatter's Bot](https://t.me/greymatter_bots)</b>")
+BATCH_FILE_CAPTION = environ.get( <code>{file_name}</code> \n\nᴊᴏɪɴ ɴᴏᴡ: [GreyMatter's Bot](https://t.me/greymatter_bots)</b>")
 IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", "🧿 ᴛɪᴛᴛʟᴇ :  {title} \n🌟 ʀᴀᴛɪɴɢ : {rating} \n🎭 ɢᴇɴʀᴇ : {genres} \n📆 ʀᴇʟᴇᴀsᴇ : {year} \n⏰ ᴅᴜʀᴀᴛɪᴏɴ : {runtime} \n🎙️ʟᴀɴɢᴜᴀɢᴇ : {languages} \n🔖 sʜᴏʀᴛ : {plot} \n★ ᴘᴏᴡᴇʀᴇᴅ ʙʏ : @GreyMatter_Bots")
-LONG_IMDB_DESCRIPTION = is_enabled(environ.get("LONG_IMDB_DESCRIPTION", "False"), False)
-SPELL_CHECK_REPLY = is_enabled(environ.get("SPELL_CHECK_REPLY", "True"), True)
-MAX_LIST_ELM = environ.get("MAX_LIST_ELM", None)
-INDEX_REQ_CHANNEL = int(environ.get('INDEX_REQ_CHANNEL',6618248423 ))
-FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '')).split()]
-MELCOW_NEW_USERS = is_enabled((environ.get('MELCOW_NEW_USERS', "True")), True)
-PROTECT_CONTENT = is_enabled((environ.get('PROTECT_CONTENT', "False")), False)
-PUBLIC_FILE_STORE = is_enabled((environ.get('PUBLIC_FILE_STORE', "False")), True)
+LONG_IMDB_DESCRIPTION = is_enabled(environ.get("False"), False)
+SPELL_CHECK_REPLY = is_enabled(environ.get("True"), True)
+MAX_LIST_ELM = environ.get(None)
+INDEX_REQ_CHANNEL = int(environ.get(,6618248423 ))
+FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('6618248423')).split()]
+MELCOW_NEW_USERS = is_enabled((environ.get("True")), True)
+PROTECT_CONTENT = is_enabled((environ.get("False")), False)
+PUBLIC_FILE_STORE = is_enabled((environ.get("False")), True)
 
 LOG_STR = "Current Cusomized Configurations are:-\n"
 LOG_STR += ("IMDB Results are enabled, Bot will be showing imdb details for you queries.\n" if IMDB else "IMBD Results are disabled.\n")
@@ -71,11 +71,11 @@ LOG_STR += f"Your current IMDB template is {IMDB_TEMPLATE}"
     
       # URL Shortener #
 
-URL_SHORTENR_WEBSITE = environ.get('URL_SHORTENR_WEBSITE', 'omegalinks.in')
-URL_SHORTNER_WEBSITE_API = environ.get('URL_SHORTNER_WEBSITE_API', '')
+URL_SHORTENR_WEBSITE = environ.get('mongodb+srv://krish72:krish72@cluster0.rj1oic0.mongodb.net/?retryWrites=true&w=majority', 'omegalinks.in')
+URL_SHORTNER_WEBSITE_API = environ.get('mongodb+srv://krish72:krish72@cluster0.rj1oic0.mongodb.net/?retryWrites=true&w=majority')
 
      # Auto Delete For Group Message (Self Delete) #
-SELF_DELETE_SECONDS = int(environ.get('SELF_DELETE_SECONDS', 300))
+SELF_DELETE_SECONDS = int(environ.get('3000', 300))
 SELF_DELETE = environ.get('SELF_DELETE', True)
 if SELF_DELETE == "True":
     SELF_DELETE = True
