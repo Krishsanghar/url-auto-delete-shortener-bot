@@ -14,35 +14,35 @@ def is_enabled(value, default):
 SESSION = environ.get('SESSION', 'Media_search')
 API_ID = int(environ.get('27180565, ''))
 API_HASH = environ.get('f5e58af893794d014273c52de9e58948', '')
-BOT_TOKEN = environ.get('6885515436:AAFK2z7JufhjhshzDk3mCndQTzEv_s7J9UM', "")
+BOT_TOKEN = environ.get('6753973405:AAHD-fdfsKUu_S52FZScRxPaMgBct62xVUM, "")
 
 #Port
 PORT = environ.get("PORT", "8080")
 
 # Bot settings
-CACHE_TIME = int(environ.get('CACHE_TIME', 300))
-USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', False))
+CACHE_TIME = int(environ.get('300', 300))
+USE_CAPTION_FILTER = bool(environ.get('False', False))
 PICS = (environ.get('PICS', 'https://telegra.ph/file/b806ad314d0c415571bde.jpg')).split()
 
 # Admins, Channels & Users
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '2001653136').split()]
+ADMINS = [int(6618248423) if id_pattern.search 6618248423) else admin for admin in environ.get('ADMINS', '2001653136').split()]
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '0').split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '2001653136').split()]
-AUTH_USERS = (auth_users + ADMINS) if auth_users else []
+AUTH_USERS = (auth_users +6618248423) if auth_users else []
 auth_channel = environ.get('AUTH_CHANNEL', '')
 auth_grp = environ.get('AUTH_GROUP')
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "")
-DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
-COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
+DATABASE_URI = environ.get('mongodb+srv://krish72:krish72@cluster0.rj1oic0.mongodb.net/?retryWrites=true&w=majority', "")
+DATABASE_NAME = environ.get('Cluster0', "Cluster0")
+COLLECTION_NAME = environ.get('ravan', 'Telegram_files')
 
 # Others
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', ''))
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'search_zone_support')
-P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "True")), True)
+SUPPORT_CHAT = environ.get('6618248423', 'search_zone_support')
+P_TTI_SHOW_OFF = is_enabled((environ.get('True', "True")), True)
 IMDB = is_enabled((environ.get('IMDB', "False")), True)
 SINGLE_BUTTON = is_enabled((environ.get('SINGLE_BUTTON', "True")), False)
 CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", "ɴᴀᴍᴇ: <code>{file_name}</code> \n\nᴊᴏɪɴ ɴᴏᴡ: [GreyMatter's Bot](https://t.me/greymatter_bots)</b>")
@@ -51,7 +51,7 @@ IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", "🧿 ᴛɪᴛᴛʟᴇ :  {title} \
 LONG_IMDB_DESCRIPTION = is_enabled(environ.get("LONG_IMDB_DESCRIPTION", "False"), False)
 SPELL_CHECK_REPLY = is_enabled(environ.get("SPELL_CHECK_REPLY", "True"), True)
 MAX_LIST_ELM = environ.get("MAX_LIST_ELM", None)
-INDEX_REQ_CHANNEL = int(environ.get('INDEX_REQ_CHANNEL', LOG_CHANNEL))
+INDEX_REQ_CHANNEL = int(environ.get('INDEX_REQ_CHANNEL',6618248423 ))
 FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '')).split()]
 MELCOW_NEW_USERS = is_enabled((environ.get('MELCOW_NEW_USERS', "True")), True)
 PROTECT_CONTENT = is_enabled((environ.get('PROTECT_CONTENT', "False")), False)
